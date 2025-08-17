@@ -1,0 +1,46 @@
+<html>      
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+
+  <body>
+    <h2>Cleveland Coffee Spot Submission</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Latte_and_dark_coffee.jpg" height=300px>
+
+
+    <form id="submissionForm">
+      <h4>Personal Information</h4>
+      <p>Name: <input type=text></p>
+      <p>Email: <input type=text></p>
+      <p>Phone Number: <input type=text></p>
+
+      <h4>Coffee Shop Form: </h4>
+      <p>Coffee Shop Name: <input type=text></p>
+      <p>Address: <input type=text></p>
+
+      <h4>Privacy Policy</h4>
+      <p>By checking the following box, you agree that we retain all rights to any data you provide forever.</p>
+      <p>I agree with the above statement: <input type=checkbox></p>
+      <input type=submit value=Submit onclick="showThankYou()">
+    </form>
+
+    <div id="thankYouMessage" style="display: none; color: green; font-weight: bold; margin-top: 20px;">
+      Thank you for submitting!
+    </div>
+
+    <script>
+      function showThankYou() {
+        //Prevent the form from actually submitting (since there's no backend)
+        event.preventDefault();
+        
+        //Hide the form
+        document.querySelector('form').style.display = 'none';
+        
+        //Show the thank you message
+        document.getElementById('thankYouMessage').style.display = 'block';
+      }
+    </script>
+
+  </body>
+</html>
