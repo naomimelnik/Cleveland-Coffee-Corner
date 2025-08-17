@@ -1,0 +1,71 @@
+body {
+  background-color: lightgoldenrodyellow;
+  
+}
+
+.jumbotron {
+  background-color: darkolivegreen;
+  color: white;
+}
+.jumbotron:hover {
+  box-shadow: 0px 5px 5px black;
+  transition: .5s;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 50px;
+  color: white;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#duckinfo:hover {
+  transform: translate(20px); 
+  transition: .5s;
+}
+
+#starinfo:hover {
+  transform: translate(20px); 
+  transition: .5s;
+}
+
+#phoenixinfo:hover {
+  transform: translate(20px); 
+  transition: .5s;
+}
+
+#eddainfo:hover {
+  transform: translate(20px); 
+  transition: .5s;
+}
+
+#heartwoodinfo:hover {
+  transform: translate(20px); 
+  transition: .5s;
+}
+
+#new {
+  background-color: darkolivegreen;
+  color: white;
+  border-color: black;
+  border-radius: .5cm;
+}
+
+#cleveland:hover {
+  box-shadow: 0px 5px 5px black;
+  transition: .5s;
+}
